@@ -1,0 +1,129 @@
+footer {
+	.main-footer {
+		background: @blue0;
+		background-image: url("../images/doodle_pattern.png");
+/* CHANGE ^ ---------------------------------------------------------------------------- */
+		margin-top: 70px;
+		padding: 40px;
+		text-align: center;
+		ul {
+			padding: 0px;
+			li {
+				display: inline;
+				list-style-type: none;
+				margin: 15px 10px;
+			}
+			&.footer-nav {
+				a {
+					color: @white;
+					text-decoration: none;
+					transition: all .1s;
+					&:hover {
+						color: @blue1;
+					}
+				}
+			}
+			&.footer-contact {
+				color: @blue1;
+			  	a{
+				  color: @blue1;
+				  &:hover {
+					color: @white;
+					text-decoration: none;
+				  }
+				}
+			}
+		}
+        p {
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white;
+          margin-bottom: 0.5em;
+        }
+        p:nth-of-type(2) {
+          margin-top: 2em;
+        }
+	}
+	.utility-footer {
+		background: @gray0;
+		color: @gray1;
+        background: @red2 !important;
+		font-size: 14px;
+		padding: 20px 15px 22px 15px;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        ul {
+          list-style: none;
+          /* border: 1px dashed yellow; */
+          display: flex;
+          justify-content: flex-start;
+          width: 1170px;
+          margin: 0 auto;
+          padding: 0;
+        }
+        ul li {
+          margin-right: 25px;
+        }
+		p.left {
+		  color: @gray1;
+			float: left;
+			opacity: .8;
+			span {
+				color: @gray1;
+				font-size: 22px;
+				opacity: .8;
+				&:hover {
+					opacity: 1;
+				}
+			}
+			a.privacy {
+				color: @gray1;
+				opacity: .8;
+				text-decoration: underline;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+		p.right {
+		  color: @gray1;
+			float: right;
+			opacity: .8;
+			a {
+				color: @white;
+				opacity: .8;
+				text-decoration: underline;
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.host-logos img {
+  width: 100px;
+  margin: 0 35px;
+  height: auto;
+}
+
+.partner-logo img {
+  width: 150px;
+}
+
+.footer-contact address {
+  margin-bottom: 0;
+}
+
+
+.footer.no-print {
+  background: @red2;
+  color: @white;
+  font-size: 10px;
+  padding: 30px;
+  margin-top: 150px;
+  height: 150px;
+  margin-bottom: -60px;
+}

@@ -1,0 +1,150 @@
+// Charity Profile
+
+
+.charity-profile {
+  margin-top: 80px;
+  .col-md-3,
+  .col-md-6 {
+    padding: 0px;
+  }
+  @media(max-width: @screen-sm) {
+    padding: 0px 15px;
+  }
+  .back-button {
+    margin-bottom: 20px;
+    span {
+      margin-right: 8px;
+    }
+    a {
+      .lato.regular;
+      color: @red0;
+      text-transform: uppercase;
+      font-size: 13px;
+      &:hover {
+        color: @red1;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.charity-story {
+  margin: 0px 30px 0px -30px;
+  padding: 0px 30px;
+  .charity-name {
+    padding: 0px;
+    h1 {
+      color: @red0;
+      font-size: 26px;
+      line-height: 30px;
+      text-transform: none;
+      margin: 0px 0px 30px 0px;
+    }
+    .high-impact {
+      background-image: url('../images/high_impact.png');
+      background-size: 80px 80px;
+      background-repeat: no-repeat;
+      padding: 50px;
+      margin-top: -20px;
+      float: left;
+    }
+  }
+  .logo {
+    background: @bright-white;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 10px 0px 10px -15px;
+    padding: 8px;
+  }
+  .location {
+    color: @red0;
+    line-height: 30px;
+    margin-top: 10px;
+    span.glyphicon {
+      margin-right: 5px;
+    }
+  }
+  label {
+    color: @red1;
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  p {
+    .lato.light;
+    font-size: 14px;
+    line-height: 25px;
+    &.summary {
+      color: @red1;
+    }
+  }
+  .board-information {
+    table {
+      width: 100%;
+      td {
+        vertical-align: top;
+        width: 50%;
+        .title {
+          .lato.regular;
+          color: @blue1;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  @media(max-width: 991px) {
+    margin: 0px;
+    padding: 20px;
+    .logo {
+      float: left;
+      width: 30%;
+      margin-right: 20px;
+    }
+  }
+}
+
+.campaign-container {
+  .campaign-title {
+    h3 {
+      margin: 10px 5px;
+      color: @red1;
+      background-color: @bright-white;
+      text-transform: none;
+      font-size: 16px;
+    }
+  }
+  .btn-primary,
+  .btn-red {
+    min-width: 40px;
+    width: 120px;
+    margin: 0px;
+    float: right;
+  }
+  .campaign-expanded {
+    margin-top: 10px;
+    padding: 30px 15px;
+    margin-bottom: -10px;
+    background-color: @white;
+    .form-control {
+      border: 1px solid @gray1;
+      border-radius: 0px;
+      color: @gray0;
+      font-size: 13px;
+      background-color: @bright-white;
+      @media(max-width: @screen-lg) {
+        width: 115px;
+      }
+      @media(max-width: @screen-md) {
+        width: 100%;
+      }
+    }
+  }
+  .close-link {
+    color: @red0;
+    padding-top: 5px;
+    padding-right: 5px;
+    &:hover {
+      color: @red1;
+    }
+  }
+}
+
+

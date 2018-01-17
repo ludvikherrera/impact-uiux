@@ -1,0 +1,131 @@
+.volunteer-opportunity {
+  .col-sm-8,
+  .col-sm-4 {
+    padding: 0px;
+  }
+  h6 {
+    color: @red0;
+    display: inline-block;
+    margin: 20px 25px 10px 0px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .charity-info {
+    @media(max-width: @screen-md) {
+      text-align: center;
+      h6 {
+        margin: 0px 0px 10px 0px;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+  .page-header {
+    margin-top: 60px;
+  }
+  .back-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    span {
+      margin-right: 8px;
+    }
+    a {
+      .lato.regular;
+      color: @red0;
+      text-transform: uppercase;
+      font-size: 13px;
+      &:hover {
+        color: @red1;
+        text-decoration: none;
+      }
+    }
+  }
+  .opportunity-info {
+    background: @bright-white;
+    padding: 20px 30px;
+    @media(max-width: @screen-md) {
+      margin-top: 20px;
+    }
+    h2 {
+      color: @red0;
+      display: inline-block;
+    }
+    hr {
+      margin: 20px 0px 30px 0px;
+      width: 75px;
+    }
+    .social {
+      text-align: right;
+      h6 {
+        color: @blue0;
+        display: block;
+        font-size: 11px;
+        margin: 10px 0px 0px 0px;
+        text-transform: uppercase;
+      }
+        a {
+          color: @blue0;
+          float: right;
+          font-size: 24px;
+          margin: 8px;
+          &:hover {
+            text-decoration: none;
+            color: @blue1;
+          }
+        }
+      @media(max-width: @screen-sm) {
+        display: none;
+      }
+    }
+    .icons-category {
+      margin: 10px 0px 30px 0px;
+    }
+  }
+  h3 {
+    color: @blue0;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    text-transform: none;
+  }
+  .view-all-link {
+    line-height: 18px;
+    text-align: right;
+    a {
+      color: @blue1;
+      .lato.regular;
+      font-size: 14px;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        color: @blue0;
+        text-decoration: none;
+      }
+    }
+    @media(max-width: @screen-md) {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.volunteer-form {
+  margin-top: 50px;
+  h3 {
+    color: @red0;
+    margin-left: 15px;
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+  .form-control {
+    .lato.regular;
+    color: @black;
+    font-size: 13px;
+    border-color: #dedede;
+    border-radius: 0px;
+  }
+}

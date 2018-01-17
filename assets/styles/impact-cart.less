@@ -1,0 +1,794 @@
+.wizard-progress {
+  list-style: none;
+  list-style-image: none;
+  margin-top: 30px;
+  white-space: nowrap;
+  margin-bottom: 60px;
+  width: 800px;
+  margin-left: 230px;
+
+  @media (max-width: @screen-lg) {
+    width: 800px;
+    margin-left: 120px;
+  }
+  @media (max-width: 767px) {
+    width: 800px;
+    margin-left: 20px;
+  }
+}
+
+.wizard-progress li {
+  float: left;
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+  width: 100px;
+}
+
+.wizard-progress a {
+  color: @blue1;
+}
+
+.wizard-progress .step-name {
+  display: table-cell;
+  height: 32px;
+  .lato.regular;
+  font-size: 14px;
+  color: @red1;
+      /* CHANGE ^ --------------------------------------------------- */
+  vertical-align: bottom;
+  text-align: center;
+  width: 100px;
+}
+
+.wizard-progress .step-name-active {
+  display: table-cell;
+  height: 32px;
+  .lato.regular;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @red0;
+      /* CHANGE ^ --------------------------------------------------- */
+  vertical-align: bottom;
+  text-align: center;
+  width: 100px;
+}
+
+.wizard-progress .step-num {
+  .lato.regular;
+  font-size: 13px;
+  color: @white;
+  padding-top: 3px;
+  background-color: @red1;
+      /* CHANGE ^ --------------------------------------------------- */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.wizard-progress .step-num:after {
+  content: "";
+  display: block;
+  background-color: @red1;
+      /* CHANGE ^ --------------------------------------------------- */
+  height: 2px;
+  width: 120px;
+  position: absolute;
+  bottom: 45px;
+  left: 65px;
+}
+
+.wizard-progress li:last-of-type .step-num:after {
+  display: none;
+}
+
+.wizard-progress .active-step .step-num {
+  color: @white;
+  background-color: @red0;
+      /* CHANGE ^ --------------------------------------------------- */
+}
+
+.statement-warning {
+  margin-left: 15px;
+}
+
+.refund-policy {
+  border-top: 1px solid @gray2-1;
+  padding-top: 15px;
+  margin-top: 15px;
+  h4{
+    // margin-bottom: -20px;
+  }
+  p {
+    .lato.regular;
+    font-size: 13px;
+    line-height: 18px;
+    color: @gray2;
+  }
+}
+
+.cart-review {
+  padding: 0px 20px;
+  margin-top: 10px;
+  font-weight: 200;
+  .btn-red {
+    margin-top: -10px;
+  }
+  .statement-warning {
+    .lato.regular;
+    text-align: right;
+    font-size: 11px;
+    line-height: 16px;
+    float: left;
+  }
+}
+
+p.info {
+  .lato.regular;
+  color: @gray2;
+}
+
+.match-box {
+  position: absolute;
+  left: -13px;
+  top: 12px;
+}
+
+.donation {
+  background: @bright-white;
+  margin: 5px 30px 5px 0px;
+  padding: 15px 30px;
+  overflow: hidden;
+  h4 {
+    // color: @blue1;
+    color: @red0;
+    /* CHANGE ^ --------------------------------------------------- */
+  }
+  input {
+    width: 15px;
+      /* CHANGE ^ --------------------------------------------------- */
+  }
+  label {
+    color: @gray1;
+    font-weight: normal;
+          /* CHANGE ^ --------------------------------------------------- */
+  }
+  p {
+    color: @blue0;
+    font-weight: 400;
+    margin: 10px;
+    input {
+      margin-right: 5px;
+    }
+    &.designate {
+      margin: 0px;
+      font-size: 13px;
+      color: @gray1;
+    }
+  }
+  .form-group,
+  .input-group {
+    select{
+      border-color: @blue1;
+      color: @blue1;
+      font-size: 14px;
+    }
+    input {
+      // border-color: @blue1;
+      border-color: @gray1;
+            /* CHANGE ^ --------------------------------------------------- */
+      color: @blue1;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    ::-webkit-input-placeholder {
+      color: @gray1;
+            /* CHANGE ^ --------------------------------------------------- */
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: @gray1;
+            /* CHANGE ^ --------------------------------------------------- */
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: @gray1;
+            /* CHANGE ^ --------------------------------------------------- */
+    }
+    :-ms-input-placeholder {
+      color: @gray1;
+            /* CHANGE ^ --------------------------------------------------- */
+    }
+  }
+  a {
+    font-size: 14px;
+    color: @blue1;
+  }
+
+  .glyphicon {
+    color: @red0;
+    font-size: 18px;
+    /* CHANGE ^ --------------------------------------------------- */
+    // margin-left: 25px;
+// padding-left: 25px;
+  }
+  .basic-link {
+    text-align: right;
+    margin-bottom: 15px;
+  }
+  .match-col {
+    // border: 1px dashed blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    margin-top: 15px;
+    height: 100px;
+    @media(max-width: 768px) {
+            height: 25px;
+        }
+    img {
+      width: 20px;
+    }
+    p {
+      font-weight: bold;
+      color: @gray0;
+      line-height: 18px;
+      text-transform: uppercase;
+      span {
+        font-weight: normal;
+        font-size: 10px;
+      }
+    }
+  }
+  .charity-amount {
+    // border: 1px dashed red;
+    // color: @blue0;
+    color: @gray1;
+      /* CHANGE ^ --------------------------------------------------- */
+      font-weight: 400;
+      margin-top: 15px;
+      text-align: center;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media(max-width: 768px) {
+              height: 25px;
+          }
+    input {
+      width: 75px;
+      margin-left: 5px;
+      color: @gray1;
+        /* CHANGE ^ --------------------------------------------------- */
+    }
+    ::-webkit-input-placeholder {
+      color: @gray1;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: @gray1;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: @gray1;
+    }
+    :-ms-input-placeholder {
+      color: @gray1;
+    }
+    /* CHANGE ^ --------------------------------------------------- */
+  }
+  .last-col {
+    display: flex;
+    margin-top: 15px;
+    border-left: 1px solid @gray2-1;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 768px) {
+            height: 25px;
+            border-left: none;
+            border-top: 1px solid @gray2-1;
+            padding-top: 10px;
+        }
+  }
+      /* CHANGE ^ --------------------------------------------------- */
+}
+
+// .remove-item {
+//   width: 25px;
+//   border-left: 1px solid @gray1;
+// }
+/* CHANGE ^ --------------------------------------------------- */
+
+
+// .donation input {
+//   width: 15px;
+// }
+
+// input#ember5839 {
+//   width: 10px;
+// }
+
+.cart-width {
+  margin: 10px 0px;
+  .well {
+    background-color: @bright-white;
+    padding: 30px;
+    .text-right {
+      margin-top: 30px;
+    }
+    a {
+      color: @blue1;
+      margin: 0px 20px;
+      &:hover {
+        text-decoration: none;
+        color: @blue0;
+      }
+    }
+  }
+  strong {
+    // color: @blue0;
+    color: @white;
+    /* CHANGE ^ --------------------------------------------------- */
+  }
+  label {
+    // color: @blue1;
+    color: @white;
+    /* CHANGE ^ --------------------------------------------------- */
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0px;
+    p {
+      margin-left: 20px;
+      font-weight: 400;
+      color: @blue1;
+
+    }
+  }
+  p.info {
+    color: @gray1;
+    margin-left: 20px;
+    margin-top: -15px;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 200;
+    width: 70%;
+  }
+  .recurring {
+    float: right;
+    margin-right: 30px;
+  }
+  .small-print {
+    margin-top: 30px;
+    p {
+      font-size: 11px;
+    }
+  }
+  .no-items {
+    h3 {
+      text-transform: none;
+      text-align: center;
+    }
+    .btn-primary {
+      width: 150px;
+      display: block;
+      margin: 0px auto;
+    }
+  }
+  .gift-card-applied {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid @red1;
+    background-color: @red1;
+    p {
+      margin-top: 0px;
+      margin-bottom: -2px;
+      color: @yellow;
+      font-weight: bold;
+    }
+
+  }
+  .processing-fee {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid @blue1;
+    background-color: @red1; //IMPACT @blue3
+    /* CHANGE ^ --------------------------------------------------- */
+    p {
+      margin-top: 0px;
+      margin-bottom: -2px;
+      color: @blue0;
+    }
+  }
+}
+
+.disclaimer p{
+  font-style: italic;
+  font-weight: bold;
+  color: @gray1;
+  margin: 10px 0 10px 30px;
+  /* CHANGE ^ --------------------------------------------------- */
+}
+
+.cart-right {
+  color: @blue1;
+  float: right;
+  font-size: 14px;
+  margin: 20px 20px 0px 20px;
+  padding: 0px 10px 10px 150px;
+  .form-group select {
+    border: 1px solid @blue1;
+    color: @blue1;
+    min-width: 150px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+}
+
+.total-text {
+  float: right;
+  margin: 15px 30px 0px 30px;
+  min-width: 250px;
+  text-align: right;
+  h3,
+  h2 {
+    color: @blue0;
+    display: inline-block;
+  }
+  small {
+    display: block;
+    color: @blue1;
+    font-size: 14px;
+  }
+}
+
+.cart-buttons {
+  float: right;
+  margin: 15px 30px 0px 0px;
+  button {
+    display: inline;
+    margin-left: 10px;
+    padding: 11px 30px;
+  }
+}
+
+.cart-payment {
+  .lato.regular;
+  line-height: 18px;
+  background: @red0;
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px;
+  border-left: 1px solid @red0;
+  border-right: 1px solid @red0;
+  h3 {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .btn-primary {
+    float: left;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .donation,
+  .total,
+  .processing-fee,
+  .gift-card-applied {
+    height: auto;
+    margin: 0px;
+    .cart-label {
+      color: @blue1;
+      display: inline-block;
+      width: 46%;
+      text-align: left;
+      vertical-align: top;
+      h3 {
+        display: inline-block;
+        margin-left: 0px;
+      }
+    }
+    .amount {
+      color: @blue1;
+      display: inline-block;
+      width: 46%;
+      text-align: right;
+      vertical-align: top;
+    }
+  }
+  .donation {
+    background: @white;
+    border-bottom: 1px solid @blue1;
+    color: @blue1;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .gift-card-applied {
+    margin: 20px 20px 0px 20px;
+    color: @yellow;
+    .cart-label,
+    .amount {
+      color: @yellow;
+    }
+  }
+  .processing-fee {
+    margin: 20px 20px 0px 20px;
+    color: @white;
+    .cart-label,
+    .amount {
+      color: @white;
+    }
+  }
+  .total {
+    padding: 10px 20px;
+    .amount {
+      color: @white;
+      margin: 25px 0px 0px 0px;
+    }
+  }
+  .edit {
+    background: @red2;
+    margin: 0px -20px -20px -20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    button {
+      margin: 30px auto;
+      &:hover {
+        background: @white;
+        border-color: @white;
+        color: @blue1;
+      }
+    }
+  }
+}
+
+
+.payment-form {
+  padding: 0px 50px;
+  label {
+    color: @red0;
+    font-size: 14px;
+  }
+  .business-info {
+    a {
+      h4 {
+        font-size: 14px;
+        &:hover {
+          color: @blue1;
+        }
+      }
+    }
+  }
+  .checkbox {
+    label {
+      p {
+        color: @blue1;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 25px;
+      }
+      input[type="checkbox"] {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  form {
+    input,
+    select {
+      background: @bright-white;
+      border-color: rgba(0,0,0,.15);
+      border-radius: 0px;
+      color: @gray2;
+      font-size: 14px;
+    }
+    ::-webkit-input-placeholder {
+      color: @gray2-1;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: @gray2-1;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+      color: @gray2-1;
+    }
+    :-ms-input-placeholder {
+      color: @gray2-1;
+    }
+  }
+  a {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: @blue1;
+    font-size: 12px;
+    &:hover {
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+}
+
+.cart-preview {
+  background: @bright-white;
+  border: 1px solid @blue1;
+  padding: 10px;
+  margin-top: 10px;
+  max-height: 550px;
+  overflow-y: auto;
+  .cart-headline {
+    background: @blue1;
+    color: @white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: -10px -10px 20px -10px;
+    padding: 18px 15px;
+    text-transform: uppercase;
+    span {
+      font-size: 18px;
+    }
+  }
+  .cart-list {
+    list-style-type: none;
+    padding: 0px;
+    li.cart-item {
+      .lato.regular;
+      display: block;
+      font-size: 14px;
+      height: auto;
+      padding: 5px;
+      a.charity-name {
+        padding: 5px 0px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        line-height: 18px;
+        width: 46%;
+        &:hover {
+          color: @blue1;
+          text-decoration: none;
+        }
+      }
+      p.amount {
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+        width: 46%;
+      }
+      p.campaign-name {
+        font-size: 13px;
+        padding: 5px 0px;
+        text-align: left;
+        line-height: 16px;
+        width: 46%;
+      }
+    }
+    li.cart-item:nth-child(odd) {
+      background: rgba(170,170,170,.1);
+      margin: 0px -10px;
+      padding: 5px 15px;
+    }
+  }
+    .floating-cart-list {
+        list-style-type: none;
+        padding: 0px;
+        li.floating-cart-item {
+            .lato.regular;
+            display: block;
+            font-size: 14px;
+            height: auto;
+            padding: 5px;
+            a.charity-name {
+                color: @blue0;
+                padding: 5px 0px;
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+                line-height: 18px;
+                width: 46%;
+                &:hover {
+                    color: @blue1;
+                    text-decoration: none;
+                }
+            }
+            p.amount {
+                display: inline-block;
+                text-align: right;
+                vertical-align: top;
+                width: 46%;
+                float: right;
+                margin-top: 5px;
+            }
+            .campaign-name {
+              font-size: 13px;
+              padding: 5px 0px;
+              text-align: left;
+              line-height: 16px;
+              width: 46%;
+            }
+        }
+        li.floating-cart-item:nth-child(odd) {
+            background: rgba(170,170,170,.1);
+            margin: 0px -10px;
+            padding: 5px 15px;
+        }
+    }
+  .cart-subtotal {
+    background: @bright-white;
+    color: @blue1;
+    font-weight: 400;
+    padding: 15px;
+    margin: 5px -10px;
+  }
+  .checkout {
+    background: @bright-white;
+    margin-top: 15px;
+    text-align: center;
+    a.btn-primary {
+      margin: auto;
+      padding: 7px 10px;
+      width: 120px;
+    }
+    .gray-link {
+      a {
+        color: @blue1;
+        font-size: 13px;
+      }
+    }
+  }
+  &.ghd {
+    border-color: @red0;
+    .cart-headline {
+      background: @red0;
+    }
+    .cart-list {
+      li.cart-item {
+        a.charity-name {
+          color: @red0;
+        }
+      }
+    }
+    .cart-subtotal {
+      color: @red0;
+    }
+    .checkout {
+      a.btn-primary {
+        background: @red0;
+        color: @white;
+        &:hover {
+          background: @red1;
+        }
+      }
+      .gray-link {
+        a {
+          color: @red0;
+        }
+      }
+    }
+  }
+}
+
+.ember-view {
+  .ember-checkbox {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+#cardForm div {
+  padding-left: 0px;
+}
+
+.cart-review {
+  font-weight: 200;
+  button {
+    margin-top: 20px;
+  }
+}
+
+.cart-receipt-note {
+    color: @white;
+    width: 80%;
+    margin: -1em auto 1em;
+    font-size: .75em;
+    text-align: center;
+}

@@ -1,0 +1,163 @@
+.charity-right-sidebar {
+  .donation {
+    background: @blue0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 20px 40px 20px;
+    text-align: center;
+    margin-right: 0px;
+    h3 {
+      color: @white;
+      margin-top: 0px;
+      font-size: 18px;
+    }
+    h5 {
+      color: @bright-white;
+      font-size: 13px;
+    }
+    input {
+      height: 50px;
+    }
+    .btn-lt-blue {
+      margin: 20px auto 0px auto;
+      &:hover {
+        background: @white;
+        color: @blue1;
+      }
+    }
+    a {
+      color: @blue1;
+      cursor: pointer;
+      text-decoration: underline;
+      &.cancel {
+        font-size: 13px;
+      }
+      &:hover {
+        color: @white;
+      }
+    }
+    p {
+      color: @white;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 20px 10px 0px 10px;
+    }
+    .suggested-donation {
+      color: @bright-white;
+      margin: 0px -20px;
+      padding: 0px 20px 0px 20px;
+      .suggestion {
+        background-color: @blue1;
+        height: auto;
+        margin: 2px -20px;
+        padding: 20px 20px 65px 20px;
+        text-align: left;
+        .suggested-donation-amount {
+          font-weight: 700;
+          letter-spacing: 1px;
+        }
+        button {
+          float: right;
+          margin: 10px;
+          padding: 5px 15px;
+          .glyphicon {
+            font-size: 10px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .custom-donation {
+      margin: 40px 0px 30px 0px;
+      text-align: center;
+      h5 {
+        font-weight: 400;
+      }
+      form.form {
+        input.form-control {
+          background: @white;
+          color: @blue1;
+          height: 40px;
+          margin: auto;
+          width: 70%;
+        }
+        button.btn-lt-blue {
+          margin: 10px auto;
+          &:hover {
+            background: @white;
+            color: @blue1;
+          }
+        }
+      }
+      .checkbox {
+        input {
+          margin-top: -12px;
+          margin-right: 5px;
+        }
+        label {
+          color: @white;
+          font-size: 13px;
+        }
+      }
+      select {
+        width: 80%;
+        margin: 10px auto 20px auto;
+      }
+    }
+  }
+  .volunteer-list {
+    background: @red0;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    h3 {
+      color: @white;
+      line-height: 30px;
+      margin: 10px 0px 20px 0px;
+    }
+    p {
+      color: @white;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 25px;
+    }
+    .volunteer-count {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 5px;
+    }
+    .btn-primary {
+      margin: 30px 10px 20px 10px;
+    }
+  }
+  @media(max-width: 991px) {
+    padding: 50px 0px 20px 0px;
+    .donation {
+      margin-right: 1%;
+      width: 46%;
+    }
+    .volunteer-list {
+      float: left;
+      margin-left: 1%;
+      width: 46%;
+    }
+  }
+  @media(max-width: 767px) {
+    .donation {
+      width: 100%;
+      .suggested-donation {
+        .suggestion {
+          padding: 20px 20px 15px 20px;
+          text-align: center;
+          button {
+            float: none;
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+    .volunteer-list {
+      width: 100%;
+    }
+  }
+}

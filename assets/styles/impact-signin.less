@@ -1,0 +1,124 @@
+.signin {
+  margin-top: 30px;
+  h2 {
+    text-transform: uppercase;
+        /* CHANGE ^ --------------------------------------------------- */
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  a {
+    color: @blue1;
+  }
+  hr {
+    border-top: 2px solid @blue1;
+    width: 25%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  h4 {
+    text-transform: none;
+    font-size: 14px;
+    color: @gray0;
+    /* CHANGE ^ --------------------------------------------------- */
+  }
+  ul {
+    padding-left: 15px;
+    margin-bottom: 25px;
+    line-height: 1em;
+      /* CHANGE ^ --------------------------------------------------- */
+    li {
+      list-style-type: square;
+      color: @blue1;
+      p {
+        color: @gray2;
+        // width: 80%;
+        line-height: 14px;
+          /* CHANGE ^ --------------------------------------------------- */
+      }
+    }
+  }
+  span.pull-left {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .signin-or {
+    position: relative;
+    display: block;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 1px;
+    background-color: @gray1;
+    opacity: .4;
+  }
+  .or {
+    position: absolute;
+    top: 40px;
+    margin-left: 10px;
+    background-color: @white;
+  }
+  .or-divider {
+    margin: 25px 0;
+  }
+  .or-vertical {
+    display: flex;
+    justify-content: center;
+  }
+  /* CHANGE ^ --------------------------------------------------- */
+  .form-group {
+    margin-top: 15px;
+    clear: both;
+    label {
+      color: @red0;
+        /* CHANGE ^ --------------------------------------------------- */
+      margin-top: 5px;
+    }
+    input {
+      border: 1px solid rgba(170,170,170,.45);
+      border-radius: 0px;
+      color: @gray0;
+      font-size: 14px;
+    }
+  }
+}
+
+.change-password {
+  text-align: center;
+  h3 {
+    color: @blue1;
+  }
+  label {
+    color: @blue1;
+  }
+  input {
+    border: 1px solid rgba(170,170,170,.25);
+    border-radius: 0px;
+    color: @blue1;
+  }
+  button {
+    margin: auto;
+  }
+}
+
+.alert {
+  background: @bright-white;
+  border-radius: 0px;
+  padding: 20px;
+  &.alert-warning,
+  &.alert-danger {
+    border: 1px solid @red1;
+    li {
+      color: @red0;
+    }
+  }
+  &.alert-success,
+  &.alert-info {
+    border: 1px solid @blue1;
+    li {
+      color: @blue0;
+    }
+  }
+}

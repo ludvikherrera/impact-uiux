@@ -1,0 +1,375 @@
+//Color Palette
+@red0: #E82C2A; // GHD Red
+@red1: #F26968; // GHD Red Light
+@red2: #A81A19; // GHD Red Dark
+
+/* Original Palette 
+
+@red0: #920e16; // Impact Red
+@red1: #f5736e; // Sunrise Red
+@red2: #920e16; // Old Style
+*/
+
+@blue0: #346ea2; // Impact Blue
+@blue1: #73afe1; // Pale Blue
+@blue2: #05283c; // Midnight Blue
+@blue3: #daeeff; // Super light Blue
+
+
+@gray0: #414141; // Charcoal Gray
+@gray1: #aaaaaa; // Subtle Gray
+
+@gray000: #fefefe;// Old Style
+@gray00: #f9f9f9;// Old Style
+@gray2: #5b5b5b;// Old Style
+@gray3: #353535;// Old Style
+
+@bright-white: #ffffff;
+@white: #f6f6f9; // Real White (Impact White) -- Altered
+@black: #282828; // Real Black (Impact Black)
+
+@calert-code: #5BC6CC; // Alert Teal for code prompt
+@calert-busn: #FFDF00; // Alert with business matched and list charities
+
+
+// Font
+
+.lato {
+  &.light {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+  }
+  &.regular {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+  }
+  &.bold {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+  }
+}
+
+
+// Old Fonts
+
+.oswald {
+  &.regular {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+  }
+  &.light {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+  }
+}
+
+.roboto {
+  &.regular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+  }
+  &.bold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+  }
+}
+
+body {
+  .lato.regular;
+  background: @white;
+  color: @black;
+  font-size: 16px;
+  height: 100%;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1 {
+  .lato.regular;
+  color: @blue0;
+  font-size: 30px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+h2 {
+  .lato.regular;
+  color: @blue0;
+  font-size: 24px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+h3 {
+  .lato.regular;
+  color: @blue0;
+  font-size: 20px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+h4 {
+  .lato.bold;
+  color: @blue0;
+  font-size: 16px;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+h5 {
+  .lato.light;
+  color: @blue0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 150%;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+h6 {
+  .lato.regular;
+  color: @blue0;
+  font-size: 16px;
+  text-shadow: none;
+}
+
+p 	{
+	.lato.regular;
+	font-size: 13px;
+    font-weight: 300;
+	color: @gray0;
+	line-height: 24px;
+}
+
+
+.container,
+.container-fluid {
+  padding: 0px;
+}
+
+.blur {
+    -webkit-filter: blur(5px) grayscale(50%);
+    -moz-filter: blur(5px) grayscale(50%);
+    -o-filter: blur(5px) grayscale(50%);
+    -ms-filter: blur(5px) grayscale(50%);
+    filter: blur(5px) grayscale(50%);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+
+form {
+  input.form-control,
+  textarea.form-control,
+  select,{
+    .lato.regular;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0px;
+    box-shadow: none;
+    color: @gray0;
+    font-size: 14px;
+    width: 100%;
+  }
+  ::-webkit-input-placeholder {
+    color: @gray1;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: @gray1;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: @gray1;
+  }
+  :-ms-input-placeholder {
+    color: @gray1;
+  }
+}
+
+.alert {
+  .lato.regular;
+  font-size: 15px;
+  background-color: @gray2;
+  color: @white;
+  padding: 20px;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  &.alert-success,
+  &.alert-info {
+    background-color: @white;
+    border: 1px solid @blue1;
+    color: @blue1;
+  }
+  &.alert-warning,
+  &.alert-danger {
+    background-color: @white;
+    border: 1px solid @red0;
+    color: @red0;
+  }
+}
+
+.alert-bar {
+    width: 100%;
+    background: @calert-code;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @media(max-width: 768px) {
+    font-size: .80em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    }
+
+    a, p {
+    color: white;
+    margin: 0;
+    }
+
+    // When businesses want to enter their code through a modal
+    .code.business {
+    text-transform: uppercase;
+    }
+  
+    span.glyphicon-remove {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: flex;
+    color: white;
+    }
+    &.match {
+        background: @calert-busn;
+        text-transform: uppercase;
+        color: @black;
+
+        p, a {
+            color: @black;
+        }
+        a {
+            font-weight: bold;
+        }
+        span.glyphicon-remove {
+            color: @black;
+        }
+    }
+}
+
+//Modals
+.modal {
+        .modal-header {
+            border-bottom: 0;
+            padding-top: 5vh;
+            text-align: center;
+
+            h4 {
+                color: @black;
+                font-size: 1.525em;
+            }
+
+            button {
+                position: absolute;
+                right: .5em;
+                top: .5em;
+            }
+        }
+        .modal-body {
+            padding-left: 5vw;
+            padding-right: 5vw;
+            padding-bottom: 0;
+
+            a.btn {
+                position: absolute;
+                right: 4vw;
+                top: .325em;
+                transform: scale(0.75,0.75);
+            }
+        }
+        .modal-footer {
+            border-top: 0;
+            padding-top: 0;
+            padding-bottom: 5vh;
+            text-align: center;
+
+            h5 a {
+                color: @red0;
+                font-size: .75em;
+                font-weight: bold;
+            }
+        }
+    &.matchmet {
+        .modal-body {
+            text-align: center;
+            .form-group button {
+                position: relative;
+                right: 0;
+                top: 0;
+                transform: scale(1,1);
+                margin: 0 auto;
+                padding: 1vh 2vh;
+                
+                svg { 
+                    height: 1em;
+                    fill: @white;
+                    position: relative;
+                    top: 1px;
+                    padding: 0 .25em;
+                }
+            }
+        }
+    }
+}
+
+.f-right {
+  float: right;
+}
+
+.f-left {
+  float: left;
+}
+
+
+
+//Margins & Padding(s)
+.marg-t {
+	margin-top: 10px !important;
+}
+.marg-l {
+	margin-left: 10px !important;
+}
+.marg-b {
+	margin-bottom: 10px !important;
+}
+.marg-r {
+	margin-right: 10px !important;
+}
+.marg-all {
+	margin: 10px !important;
+}
+.marg-none {
+	margin: 0px !important;
+}
+.marg-b-none {
+  margin-bottom: 0px !important;
+}
+.marg-t-none {
+  margin-top: 0px !important;
+}
+
+.pad-t {
+	padding-top: 10px !important;
+}
+.pad-l {
+	padding-left: 10px !important;
+}
+.pad-b {
+	padding-bottom: 10px !important;
+}
+.pad-r {
+	padding-right: 10px !important;
+}
+.pad-all {
+	padding: 10px !important;
+}
+.pad-none {
+	padding: 0px !important;
+}

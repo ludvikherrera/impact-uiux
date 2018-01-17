@@ -1,0 +1,341 @@
+.home-intro {
+    padding: 70px 20px 90px 20px;
+    text-align: center;
+    hr {
+        margin-bottom: 40px;
+    }
+}
+
+.home-stats {
+    background-color: @red0;
+    background: url("../images/subtle-mini-waves.png") repeat;
+    padding: 40px 25px 80px 25px;
+    text-align: center;
+    .stat-icon {
+        background: @red1;
+        border-radius: 100%;
+        display: block;
+        height: 200px;
+        margin: 50px auto;
+        padding: 40px;
+        text-align: center;
+        width: 200px;
+    }
+}
+
+// Main Hero Image 
+
+#ghd-msg {
+    background: @red0;
+    
+    .row {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .ghd-message {
+        padding-left: calc( 115px * 1.25vw );
+        margin-top: .25em;
+        background: url('../images/icons/globe.svg') 2em bottom no-repeat;
+        
+        @media(max-width: 660px) {
+            background: none;
+            padding-left: calc( 45px * 1.25vw );
+        }
+    }
+    
+    .ghd-message p {
+    font-family: 'Georgia','Times',serif;
+    font-size: 2.75em;
+    color: @white;
+    margin-top: 0.75em;
+    font-style: italic;
+    line-height: 1em;
+    height: 2.75em;
+        
+    @media(max-width: 780px) {
+        font-size: calc ( 2.75vw );
+        }
+    }
+    
+    .countme .btn-primary {
+        background: @white;
+        color: @red0;
+        width: 100%;
+        padding: 0.85em 1em;
+        font-size: 1.5em;
+        box-shadow: 0px 5px 5px rgba(102,102,102,0.2);
+        
+        .btn-donate {
+            display: block;
+            font-size: .75em;
+            color: @gray0;
+        }
+    }
+}
+
+svg#heart {
+    height: 1em;
+    fill: @red0;
+    position: relative;
+    top: .1em;
+}
+
+
+
+
+.featured-charity {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    h2 {
+        text-align: center;
+    }
+    hr {
+        width: 10%;
+    }
+    .featured-charity-info {
+        background: #ffffff;
+        border: 2px solid @blue1;
+        margin: 40px;
+        padding: 50px;
+        overflow: hidden;
+        img.featured-img {
+            border: 2px solid @blue1;
+            width: 95%;
+        }
+        h3 {
+            margin-top: 0px;
+        }
+        a {
+            margin-right: 10px;
+            width: 45%;
+            float: left;
+        }
+        .summary,
+        .locations {
+            color: @blue1;
+            font-size: 14px;
+            margin: 25px 0px;
+        }
+        button {
+            display: inline;
+            margin: 25px 10px 0px 0px;
+        }
+    }
+    @media(max-width: 1200px) {
+        .featured-charity-info {
+            padding: 25px;
+        }
+    }
+    @media(max-width: 991px) {
+        .featured-charity-info {
+            padding: 30px;
+            img.featured-img {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    @media(max-width: 500px) {
+        .featured-charity-info {
+            margin: 30px 15px;
+            padding: 15px;
+        }
+    }
+}
+
+
+.news-events {
+    background: @blue1;
+    color: @white;
+    margin-bottom: -70px;
+    padding: 70px 25px 20px 25px;
+    .news,
+    .events {
+        margin-bottom: 60px;
+        p {
+            color: @white;
+            margin-bottom: 5px;
+        }
+    }
+    a:hover,
+    a:focus {
+        text-decoration: none;
+    }
+    a.read-more {
+        color: @blue0;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: underline;
+        transition: all .1s;
+        &:hover,
+        &:focus {
+            color: @white;
+        }
+    }
+
+    a.view-all {
+        color: @blue0;
+        font-weight: 700;
+        transition: all .1s;
+        text-align: center;
+        &:hover,
+        &:focus {
+            color: @white;
+        }
+    }
+}
+
+.media {
+    .media-body {
+        padding-bottom: 20px;
+    }
+}
+
+
+.content-header {
+    padding: 0px 30px;
+    button {
+        margin-bottom: 30px;
+        span {
+            color: @white;
+        }
+    }
+    hr {
+        margin: 30px 0px 0px 0px;
+        display: block;
+    }
+    @media (max-width: 475px) {
+        padding: 0px;
+    }
+}
+
+.content-section {
+    margin-bottom: 100px;
+    padding: 0px 30px;
+    @media (max-width: 475px) {
+        padding: 0px;
+    }
+    h2, h3, h4 {
+        text-transform: none;
+    }
+    h4 {
+        margin-top: 30px;
+    }
+}
+
+.pricing-table {
+    color: @white;
+    margin-top: 50px;
+    text-align: center;
+    .col-sm-6 {
+        padding: 10px;
+    }
+    .pricing-table-header {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        padding: 15px;
+    }
+    .pricing-table-info {
+        ul {
+            margin: 0px;
+            padding: 0px 25px 0px 25px;
+            li {
+                border-bottom: 1px solid;
+                list-style-type: none;
+                padding: 15px;
+                &:last-child {
+                    border-bottom: 0px;
+                }
+            }
+        }
+    }
+    .pricing-table-footer {
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        a:hover {
+            text-decoration: none;
+        }
+        button {
+            margin: auto;
+            &:hover {
+                background: @white;
+            }
+            &.btn-red {
+                a {
+                    color: @white;
+                }
+                &:hover {
+                    a {
+                        color: @red0;
+                    }
+                }
+            }
+        }
+        padding: 15px;
+    }
+    &.basic {
+        .pricing-table-header {
+            background: @blue0;
+        }
+        .pricing-table-info {
+            background: @blue1;
+            ul li {
+                border-color: rgba(52,110,162,.3)
+            }
+        }.pricing-table-footer {
+            background: @blue1;
+        }
+    }
+    &.premium {
+        .pricing-table-header {
+            background: @red0;
+        }
+        .pricing-table-info {
+            background: @red1;
+            ul li {
+                border-color: rgba(230,75,77,.5)
+            }
+        }.pricing-table-footer {
+            background: @red1;
+            margin-bottom: 50px;
+            @media (max-width: 767px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+//Wordpress Image Styles
+
+img.alignleft {
+        float: left;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        display: inline;
+}
+
+img.alignright {
+        float: right;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        display: inline;
+}
+
+.bod {
+    background-color: @white0;
+    padding: 22px;
+    margin: 30px 5px 0px 5px;
+    border: 1px solid @gray2-1;
+
+    h4 {
+        .lato.regular;
+        font-size: 13px;
+        text-transform: none;
+    }
+}
+
+
+

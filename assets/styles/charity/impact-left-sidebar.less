@@ -1,0 +1,76 @@
+.charity-left-sidebar {
+  color: @gray0;
+  font-size: 14px;
+  padding: 0px 60px 0px 0px;
+  .profile-image img {
+    margin-bottom: 20px;
+  }
+  label {
+    color: @red1;
+    font-size: 15px;
+    display: block;
+  }
+  .categories {
+    margin-bottom: 30px;
+  }
+  .category-icon {
+    background: @red0;
+    border-radius: 7px;
+    color: @white;
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 7px;
+    padding: 10px 10px;
+    width: 50px;
+    height: 50px;
+    @media(max-width: @screen-sm) {
+      font-size: 14px;
+      width: 30px;
+      height: 30px;
+      padding: 5px 8px;
+    }
+  }
+  .profile-section {
+    .lato.regular;
+    margin-bottom: 30px;
+    .social {
+      a {
+        font-size: 24px;
+        &:hover {
+          text-decoration: none;
+          color: @red0;
+        }
+      }
+    }
+  }
+  a {
+    color: @red1;
+  }
+  @media(max-width: 991px) {
+    clear: both;
+    padding: 0px 15px;
+    .profile-image img {
+      display: none;
+    }
+    .categories {
+      float: left;
+      height: 70px;
+      margin-top: 30px;
+      width: 33%;
+    }
+    .profile-section {
+      height: 70px;
+      width: 33%;
+      float: left;
+      margin-top: 30px;
+    }
+  }
+  @media(max-width: 767px) {
+    .categories {
+      width: 50%;
+    }
+    .profile-section {
+      width: 50%;
+    }
+  }
+}

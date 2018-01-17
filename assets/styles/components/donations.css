@@ -1,0 +1,361 @@
+
+
+.boost-award-pop-over .information {
+  background-color: #2c598b;
+  color: #fff;
+  display: block;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+
+.boost-award-pop-over .information::before {
+  color: #2c598b;
+  content: "\f0d9";
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 38px;
+  left: -10px;
+  position: absolute;
+  top: 0;
+}
+
+.boost-award-pop-over .information h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+  form {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  form > *:not(script) {
+    margin-bottom: 40px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  form > *:not(script):last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.amount-raised {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: stretch;
+  -moz-box-pack: stretch;
+  box-pack: stretch;
+  -webkit-justify-content: stretch;
+  -moz-justify-content: stretch;
+  -ms-justify-content: stretch;
+  -o-justify-content: stretch;
+  justify-content: stretch;
+  -ms-flex-pack: stretch;
+  max-height: 585px;
+  max-width: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.amount-raised > *:not(script) {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 33.33333%;
+}
+@media (max-width: 767px) {
+
+  .amount-raised {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .amount-raised > *:not(script) {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .amount-raised > *:not(script):last-child {
+    margin-bottom: 0;
+  }
+}
+
+.amount-raised h3 {
+  color: #1ec3b3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 10px;
+  max-height: 40px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.amount-raised h4 {
+  color: #2c598b;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 1;
+  margin: 0 0 12px;
+  max-height: 40px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.amount-raised h4 span {
+  color: #1ec3b3;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.amount-raised .amount-raised-meter {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end;
+  border: 1px solid #3c98d7;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20px;
+  position: relative;
+  width: 20px;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper {
+  display: block;
+  height: 34.2857%;
+  position: relative;
+  z-index: 10;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper:before {
+  background: url("amount-raised-indicator.png");
+  content: "";
+  display: block;
+  height: 772px;
+  left: -56px;
+  position: absolute;
+  top: -10px;
+  width: 130px;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .boost-award {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid #c1f970;
+  color: #2c598b;
+  display: block;
+  font-size: 14px;
+  left: -70px;
+  line-height: 1.5;
+  padding: 5px;
+  position: absolute;
+  text-align: left;
+  text-decoration: none;
+  z-index: 11;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .boost-award span {
+  color: #2c598b;
+  font-weight: bold;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .boost-award i {
+  color: #c1f970;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .boost-award:hover {
+  background-color: #2c598b;
+  color: #fff;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .boost-award:hover span {
+  color: #c1f970;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill {
+  display: block;
+  position: relative;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill.donated {
+  background-color: #3c98d7;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill.donated.one-hundred {
+  height: 8.333%;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill.donated.five-hundred {
+  height: 41.6667%;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill.donated.even {
+  background-color: #acf73f;
+}
+
+.amount-raised .amount-raised-meter .donation-pill-wrapper .donation-pill.match {
+  background-color: #c1f970;
+  height: 8.333%;
+}
+
+form .story {
+  color: #5e5e5e;
+  font-weight: 500;
+}
+
+form .story h3 {
+  color: #3c98d7;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+
+  form .gift {
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  form .gift .gift-content {
+    padding: 15px;
+  }
+
+  .amount-raised {
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    max-width: 100%;
+  }
+
+  .amount-raised .amount-raised-meter {
+    height: 557px;
+  }
+
+  form .story {
+    text-align: center;
+  }
+}

@@ -1,0 +1,475 @@
+.nonprofit {
+  background-color: @bright-white;
+  padding: 15px;
+  overflow: hidden;
+  @media(max-width: 991px) {
+	margin-top: 20px;
+  }
+  a {
+	color: @red0;
+	&:focus,
+	&:hover {
+	  text-decoration: none;
+	}
+	&:hover {
+	  color: @white;
+	}
+  }
+
+  // Charity Search
+
+  .callout-text {
+	margin-bottom: 15px;
+	padding-left: 0px;
+	input {
+	  color: @gray0;
+	  box-shadow: none;
+	}
+	::-webkit-input-placeholder {
+	  color: @gray1;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: @gray1;
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	  color: @gray1;
+	}
+	:-ms-input-placeholder {
+	  color: @gray1;
+	}
+	.clear-all-link {
+	  margin-top: 10px;
+	  margin-left: 15px;
+	  a {
+		&:hover {
+		  color: @red0;
+		}
+	  }
+	}
+
+  }
+
+  .view-all-link a {
+	color: @red1;
+	font-weight: 400;
+	margin-left: 0px;
+	padding-left: 0px;
+	span {
+	  margin-left: 7px;
+	}
+  }
+
+	.view-all-list a {
+		color: @gray1;
+		font-size: 12px;
+		font-weight: 400;
+		margin-left: 0px;
+		padding-left: 0px;
+		text-align: right;
+		float: right;
+		margin-top: -10px;
+		&:hover {
+			color: @gray2;
+		}
+		span {
+			margin-right: 5px;
+		}
+		@media(max-width: @screen-sm) {
+			margin-top: 0px;
+		}
+	}
+
+  .search-text {
+	.lato.regular;
+	color: @blue0;
+	font-size: 16px;
+	margin: 15px;
+  }
+
+  .search-section {
+	@media(max-width: 991px) {
+	  margin-top: 10px;
+	}
+	h3 {
+	  font-size: 16px;
+	  margin-top: 10px;
+	  margin-left: -15px;
+	  margin-right: 10px;
+	  float: left;
+	  @media(max-width: 991px) {
+		margin-left: 0px;
+	  }
+	}
+	label {
+	  margin-right: 5px;
+	  margin-top: 10px;
+	  padding-top: 0px;
+	}
+	.input-group {
+	  .input-group-addon {
+		background: @red0;
+		border-color: @red0;
+		border-radius: 0px;
+		color: @white;
+		padding: 6px 12px 6px 0px;
+		span.glyphicon-remove-circle {
+		  padding-left: 25px;
+		}
+	  }
+	  input {
+		background: transparent;
+		border-color: @red0;
+		border-radius: 0px;
+		&.zip-code {
+		  .lato.light;
+		  font-size: 18px;
+		  width: 100px;
+		  display: inline;
+		  margin-right: 10px;
+		  @media(max-width: 1200px) {
+			width: 80px;
+			font-size: 14px;
+		  }
+		  @media(max-width: 991px) {
+			width: 120px;
+			font-size: 18px;
+		  }
+		}
+	  }
+	  select {
+		&.radius {
+		  width: 90px;
+		  margin-right: 5px;
+		  margin-top: 10px;
+		  @media(max-width: 1200px) {
+			width: 50px;
+		  }
+		}
+	  }
+	}
+  }
+
+  // Grid
+
+  a.thumbnail {
+	background: @bright-white;
+	border: 3px solid transparent;
+	margin-bottom: 20px;
+	padding: 0px;
+	position: relative;
+	.sample-photo {
+	  height: 255px;
+	  @media(max-width: @screen-lg) {
+		height: 205px;
+	  }
+	  @media(max-width: @screen-md) {
+		height: auto;
+	  }
+	}
+	.sample-organizations {
+	  background-color: rgba(230,75,77,.85);
+	  color: @white;
+	  height: auto;
+	  padding: 20px;
+	  position: absolute;
+	  bottom: 0;
+	  font-weight: 400;
+	  width: 100%;
+	  @media(max-width: @screen-sm) {
+		left: 20%;
+		width: 60%;
+	  }
+	  @media(max-width: @screen-xs) {
+		width: 100%;
+		left: 0;
+	  }
+	}
+	&:hover {
+	  border-color: @red0;
+	  @media(max-width: @screen-sm) {
+		border-color: transparent;
+	  }
+	}
+  }
+
+  // Individual Box
+
+  .nonprofit-section {
+	.lato.light;
+	border: 1px solid @white;
+	margin: 20px 10px;
+	min-height: 213px;
+	div {
+	  padding: 0px;
+	}
+	.nonprofit-title {
+	  .lato.regular;
+	  background-color: rgba(65,65,65,.06);
+	  color: @red0;
+	  font-size: 15px;
+	  padding: 15px 15px 35px 15px;
+	  text-transform: uppercase;
+	  a {
+		&:hover {
+		  color: @red1;
+		}
+	  }
+	  .icons-category {
+		float: right;
+	  }
+	  @media(max-width: 991px) {
+		img {
+		  padding: 20px 20px;
+		}
+		@media(max-width: @screen-sm) {
+		  padding: 15px;
+		}
+		.icons-category {
+		  font-size: 14px;
+		}
+	  }
+	  @media(max-width: 767px) {
+		.icons-category {
+		  float: left;
+		}
+	  }
+	}
+  }
+
+  .nonprofit-logo {
+	padding: 15px;
+	margin-bottom: 0px;
+	@media(max-width: @screen-sm) {
+	  width: 100%;
+	  padding: 15px 15px 0px 15px;
+	}
+  }
+
+  .locations-group {
+	font-size: 13px;
+	margin: 15px 0px 10px 0px;
+	span {
+	  color: @red1;
+	  margin-right: 5px;
+	}
+	@media(max-width: @screen-sm) {
+	  margin-left: 15px;
+	}
+  }
+
+  .charity-content {
+	line-height: 24px;
+	color: @gray2;
+	font-size: 14px;
+	margin: 0px 10px 10px 15px;
+	@media(max-width: @screen-sm) {
+	  padding-bottom: 15px;
+	}
+  }
+
+  .donation {
+	margin-right: 0px;
+	.form-group {
+	  margin: 0px;
+	  padding: 0px;
+	}
+	.or {
+	  .lato.regular;
+	  margin-top: 5px;
+	  margin-bottom: -5px;
+	  color: @red0;
+	  text-align: center;
+	}
+	.suggested {
+	  border-top: 1px solid #d3d3d3;
+	  padding: 5px 0px;
+	  margin-top: 10px;
+	  p.red {
+		color: @red0;
+		font-size: 18px;
+		text-align: center;
+		@media(max-width: @screen-sm) {
+		  text-align: left;
+		  margin-left: 15px;
+		}
+	  }
+	  p {
+		color: @gray1;
+		font-size: 12px;
+		line-height: 16px;
+		@media(max-width: @screen-sm) {
+		  margin-left: 15px;
+		}
+	  }
+	  .btn-red {
+		margin-right: 15px;
+		font-size: 10px;
+		float: right;
+		padding: 5px 8px;
+		margin-top: 8px;
+		@media(max-width: @screen-sm) {
+		  float: left;
+		  margin-left: 15px;
+		  margin-top: 0px;
+		  margin-bottom: 20px;
+		}
+	  }
+	}
+	.custom {
+	  p {
+		font-size: 13px;
+		margin-bottom: -10px;
+	  }
+	  .form-control {
+		margin: 0px auto;
+		width: 70%;
+	  }
+	  .btn-red {
+		&.small {
+		  margin-top: 10px;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	  }
+	}
+  }
+
+  .charity-buttons {
+	margin-top: 20px;
+	p {
+	  color: @gray1;
+	  font-size: 12px;
+	  line-height: 16px;
+	  text-align: center;
+	  margin-top: 10px;
+	}
+	p.center {
+	  margin-top: -5px;
+	  font-size: 13px;
+	  text-align: center;
+	  @media(max-width: 991px) {
+		text-align: center;
+	  }
+	}
+	.btn-red {
+	  &.medium {
+		width: 180px;
+		margin-left: auto;
+		margin-right: auto;
+		@media(max-width: 1199px) {
+		  width: 150px;
+		  min-width: 20px;
+		}
+	  }
+	}
+
+	.donate-small-link {
+	  display: block;
+	  margin: -5px 0px 0px 40px;
+	  a {
+		color: @red1;
+		font-size: 13px;
+		font-weight: 400;
+	  }
+	  @media(max-width: 1199px) {
+		margin: -5px 0px 0px 20px;
+	  }
+	  @media(max-width: 991px) {
+		display: block;
+		width: 150px;
+		margin: 0px auto;
+	  }
+	}
+	button {
+		a:hover {
+		  color: @red0;
+		}
+	}
+	.btn-primary,
+	.btn-secondary {
+	  &.btn-red {
+		&.medium {
+		  @media(max-width: 991px) {
+			width: 400px;
+			margin-top: 10px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		  }
+		  @media(max-width: @screen-sm) {
+			width: 200px;
+		  }
+		}
+	  }
+	}
+	.form-group {
+	  input.form-control {
+		border-color: @gray1;
+		color: @gray1;
+		::-webkit-input-placeholder {
+		  color: @gray1;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		  color: @gray1;
+		}
+		::-moz-placeholder {  /* Firefox 19+ */
+		  color: @gray1;
+		}
+		:-ms-input-placeholder {
+		  color: @gray1;
+		}
+	  }
+	}
+	@media(max-width: 991px) {
+	  button {
+		display: inline-block;
+		margin: 5px;
+	  }
+	}
+	@media(max-width: 991px) {
+	  display: inline;
+	}
+  }
+}
+
+.receipt-resend {
+	margin-top: 30px;
+	p {
+		line-height: 17px;
+	}
+}
+
+.charity-list {
+	margin-top: 100px;
+  margin-bottom: 150px;
+	.back-to-list {
+		a {
+			font-size: 12px;
+			.lato.bold;
+			color: @red0;
+			text-transform: uppercase;
+			&:hover {
+				color: @red1;
+				text-decoration: none;
+			}
+		}
+	}
+	.charity-list-section {
+		background-color: white;
+		padding: 20px;
+		margin: 20px 0px;
+		h3 {
+			margin-top: 0px;
+			color: @red1;
+		}
+		a {
+			color: @blue1;
+			display: block;
+			&:hover {
+				text-decoration: none;
+				color: @blue0;
+			}
+		}
+	}
+}

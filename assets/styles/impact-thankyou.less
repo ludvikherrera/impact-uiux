@@ -1,0 +1,134 @@
+.share-box {
+	border: 0;
+	padding: 20px;
+	background-color: @white;
+	margin-bottom: 10px;
+	margin-top: 5px;
+    position: relative;
+    /* box-shadow: 0px 5px 5px #CCC; */
+    
+    h4, p {
+        color: @white;
+        text-align: center;
+    }
+    h4 {
+        letter-spacing: .0625em;
+    }
+    >.share-icon {
+        display: block;
+        text-align: center;
+    }
+    .share-icon svg {
+     stroke-width: 2pt;
+     stroke: @white;
+     fill: @red0;
+     height: 40px;
+     margin: 0 auto;
+    }
+}
+
+.email-list {
+	.roboto.regular;
+	font-size: 12px;
+	list-style-type: none;
+	padding: 0px;
+	margin-left: -40px;
+}
+
+.share-header {
+	.oswald.regular;
+	font-size: 18px;
+	color: @white;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.share-subheader {
+	.oswald.regular;
+	font-size: 20px;
+	color: @white;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.help-block {
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+.email-header {
+	.oswald.regular;
+	font-size: 18px;
+	color: @white;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.email-subheader {
+	.oswald.regular;
+	font-size: 16px;
+	color: @white;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.email-confirmation {
+	.oswald.regular;
+	font-size: 16px;
+	color: @white;
+	background-color: @red0;
+	padding: 10px;
+	width: auto;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+.eq-height {
+    display: table;
+    width: 100%;
+    
+    .share-box {
+        height: 100%;
+        position: relative;
+        background: @red0;
+        color: white;
+        border-radius: 7.5px;
+
+     button, a {
+        position: absolute;
+        bottom: 1em;
+        left: 5%;
+        width: 90%;
+        margin: 0 0;
+        background: @white;
+        color: @red0;
+        box-shadow: 0px 5px 5px rgba(102,102,102,0.2);
+        
+        .share-icon svg {
+             height: 1.25em;
+             position: relative;
+             top: .25em;
+                }
+         
+            }
+        }
+    @media (max-width: @screen-sm) {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    }
+    }
+
+.col {
+        display: table-cell;
+        height: calc( 18em + 4em );
+    
+    @media (max-width: @screen-sm) {
+    display: block;
+    }
+     }

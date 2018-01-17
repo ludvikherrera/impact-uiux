@@ -1,0 +1,149 @@
+.btn-default,
+.btn-primary {
+  .lato.regular;
+  background: @red0;
+  border: 0px;
+  border-radius: 30px;
+  color: @white;
+  display: block;
+  font-size: 14px;
+  margin: 10px 0px;
+  min-width: 170px;
+  padding: 11px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .1s;
+  &:hover,
+  &:focus {
+	   background: @red1;
+     color: @white;
+      text-decoration: none;
+  }
+  &.btn-red {
+	background: @red0;
+	&:hover {
+	  background: @red1;
+	  color: @white;
+	}
+  }
+  &.btn-lt-red {
+    background: @red1;
+    &:hover {
+      background: @white;
+      color: @red1;
+    }
+  }
+  &.btn-blue-outline {
+    color: @blue1;
+    border: 1px solid @blue1;
+    background: @white;
+    &:hover,
+    &:focus {
+      background: @white;
+      color: @blue0;
+      border: 1px solid @blue0;
+    }
+  }
+  &.btn-blue {
+	background: @blue0;
+	&:hover {
+	  background: @white;
+	  color: @blue1;
+	}
+  }
+  &.btn-lt-blue {
+    background: @red0;
+    /* CHANGE ^ --------------------------------------------------- */
+    &:hover {
+      background: @red1;
+      /* CHANGE ^ --------------------------------------------------- */
+      color: @white;
+    }
+  }
+  &.medium {
+    padding: 9px 12px;
+  }
+  &.small {
+	.lato.regular;
+	font-size: 13px;
+	margin: 0px;
+	min-width: 60px;
+	padding: 5px 12px;
+  }
+  &.btn-zip-code {
+    padding: 10px 10px;
+    min-width: 45px;
+    margin-left: 5px;
+    margin-top: 0px;
+    float: right;
+    display: inline-block;
+  }
+  &.btn-connect {
+    width: 55%;
+    background-color: @red1;
+      /* CHANGE ^ --------------------------------------------------- */
+    font-size: 13px;
+    span {
+      margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+      background-color: @red0;
+      /* CHANGE ^ --------------------------------------------------- */
+    }
+  }
+}
+
+
+.btn-secondary {
+  .lato.regular;
+  background: transparent;
+  border: 3px solid @red1;
+  border-radius: 30px;
+  color: @red1;
+  display: block;
+  font-size: 14px;
+  margin: 10px 0px;
+  min-width: 170px;
+  padding: 9px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all .1s;
+  &:hover,
+  &:focus {
+    border-color: @red0;
+    color: @red0;
+    text-decoration: none;
+  }
+  &.btn-white {
+    border-color: @white;
+    color: @white;
+    &:hover {
+      background: @white;
+      color: @red0;
+    }
+  }
+  &.btn-red {
+    border-color: @red1;
+    color: @red1;
+    &:hover {
+      border-color: @red0;
+      color: @red0;
+    }
+  }
+  &.btn-lt-blue {
+    border-color: @blue1;
+    color: @blue1;
+    &:hover {
+      border-color: @blue0;
+      color: @blue0;
+    }
+  }
+  &.medium {
+    padding: 5px 10px;
+  }
+  &.small {
+    min-width: auto;
+    padding: 5px 10px;
+  }
+}
