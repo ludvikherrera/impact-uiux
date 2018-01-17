@@ -7,11 +7,13 @@ These files are a private project and solely for visualization and later on can 
 ## Nüpolitan updates and modifications
 In each of the rendered HTML documents you will find HTML comments that look like the example below:
 
-* <!-- // START Nü end of fixed nav bar // -->
-* <anycode>
-* Any content that has been modified by Nüpolitan
-* </anycode>
-* <!-- // END Nü end of fixed nav bar // -->
+```
+<!-- // START Nü end of fixed nav bar // -->
+<anycode>
+Any content that has been modified by Nüpolitan
+</anycode>
+<!-- // END Nü end of fixed nav bar // -->
+```
 
 In order to process and compile the LESS styles, we are using a live app compiler 'Codekit'
 
