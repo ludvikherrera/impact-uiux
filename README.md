@@ -8,11 +8,11 @@ These files are a private project and solely for visualization and later on can 
 In each of the rendered HTML documents you will find HTML comments that look like the example below:
 
 ```
-<!-- // START Nü end of fixed nav bar // -->
+<!-- // START Nü fixed nav bar // -->
 <anycode>
 Any content that has been modified by Nüpolitan
 </anycode>
-<!-- // END Nü end of fixed nav bar // -->
+<!-- // END Nü fixed nav bar // -->
 ```
 
 In order to process and compile the LESS styles, we are using a live app compiler 'Codekit'
@@ -22,13 +22,17 @@ In order to process and compile the LESS styles, we are using a live app compile
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Codekit](codekitapp.com/)
+* [Codekit](codekitapp.com/) (to process and compile LESS files, otherwise, just a browser)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
 * `cd impact-uiux`
 * You can either drag and drop HTML rendered docs in browser, or open Codekit and add this directory as a project
+
+## Screenshots
+
+The folder "_screenshots" contains all of the many screen shots necessary to visualize the UI and what elements have been styled by Nüpolitan.
 
 ### Deploying
 
