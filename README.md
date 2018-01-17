@@ -15,7 +15,7 @@ Any content that has been modified by Nüpolitan
 <!-- // END Nü fixed nav bar // -->
 ```
 
-In order to process and compile the LESS styles, we are using a live app compiler 'Codekit'
+In order to process and compile the LESS styles, we are using a live app compiler 'Codekit', but you can use whatever pre-processor or compiler at hand.
 
 ## Prerequisites
 

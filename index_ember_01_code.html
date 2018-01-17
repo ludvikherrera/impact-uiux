@@ -79,6 +79,7 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
+<!-- // START Nü modal blurring // -->
     <script>
         /* Modal blurring of the background */
         $( document ).ready(function() {
@@ -86,10 +87,16 @@
             $('#modalCode').on('show.bs.modal', function () {
                 $('.container').addClass('blur');
             })
+            $('#modalVideo').on('show.bs.modal', function () {
+                $('.container').addClass('blur');
+            })
             $('#modalCodeMatch').on('show.bs.modal', function () {
                 $('.container').addClass('blur');
             })
 
+            $('#modalVideo').on('hide.bs.modal', function () {
+                $('.container').removeClass('blur');
+            })
             $('#modalCode').on('hide.bs.modal', function () {
                 $('.container').removeClass('blur');
             })
@@ -98,6 +105,7 @@
             })
        });
     </script>
+<!-- // END Nü modal blurring // -->
 
     <!-- Google API -->
     <meta name="google-signin-clientid" content="821803660680-9n1476ol1vvurmtbbeg77k3us9v0bi9g.apps.googleusercontent.com" />
