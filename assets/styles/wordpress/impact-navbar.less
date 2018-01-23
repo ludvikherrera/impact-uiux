@@ -336,6 +336,42 @@ nav.navbar.navbar-default {
                 }
             }
         }
+        a.navbar-brand-dual {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            color: @black;
+            span.company_match_logo {
+                height: 93px;
+                width: 93px;
+                display: block; 
+            }
+            span#ghd_dual {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                img { height: 35px;
+                    @media(max-width: 530px) {
+                        height: 32px;
+                    } 
+                }
+                span {
+                    text-transform: uppercase;
+                    margin-left: 48px;
+                    margin-top: -19px;
+                    font-weight: bold;
+                    font-size: .85em;
+                }
+            }
+            @media(max-width: 530px) {
+                margin-left: -1em;
+                transform: scale(.85,.85);
+            }
+            &:hover {
+            text-decoration: none;
+        }
+        }
+        
         button.navbar-toggle {
             margin-top: 25px;
             padding: 12px;

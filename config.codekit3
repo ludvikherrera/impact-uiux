@@ -2185,6 +2185,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/ghd_logo2018_dual.png": {
+		"ft": 32768,
+		"iS": 64343,
+		"oA": 0,
+		"oAP": "\/images\/ghd_logo2018_dual.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/gift-card-icon.png": {
 		"ft": 32768,
 		"iS": 552,
@@ -2747,6 +2758,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/microsoft_logo.png": {
+		"ft": 32768,
+		"iS": 38608,
+		"oA": 0,
+		"oAP": "\/images\/microsoft_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/red_waves.jpg": {
 		"ft": 16384,
 		"iS": 300546,
@@ -2773,6 +2795,16 @@
 		"iS": 300546,
 		"oA": 0,
 		"oAP": "\/images\/red_waves_original.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/sanford_logo.jpg": {
+		"ft": 16384,
+		"iS": 48822,
+		"oA": 0,
+		"oAP": "\/images\/sanford_logo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
