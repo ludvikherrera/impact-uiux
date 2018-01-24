@@ -6581,6 +6581,9 @@ p {
 .container-fluid {
   padding: 0px;
 }
+.container-fluid {
+  margin-top: 170px;
+}
 .blur {
   -webkit-filter: blur(5px) grayscale(50%);
   -moz-filter: blur(5px) grayscale(50%);
