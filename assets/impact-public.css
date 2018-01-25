@@ -11311,10 +11311,10 @@ hr.divider.lt-blue {
   margin-top: .25em;
   background: url('../images/icons/globe.svg') 2em bottom no-repeat;
 }
-@media (max-width: 660px) {
+@media (max-width: 670px) {
   #ghd-msg .ghd-message {
     background: none;
-    padding-left: calc(56.25px);
+    padding-left: 0;
   }
 }
 #ghd-msg .ghd-message p {
@@ -11326,9 +11326,11 @@ hr.divider.lt-blue {
   line-height: 1em;
   height: 2.75em;
 }
-@media (max-width: 780px) {
+@media (max-width: 670px) {
   #ghd-msg .ghd-message p {
-    font-size: calc 2.75vw;
+    font-size: calc(6vw);
+    margin-top: 2em;
+    text-align: center;
   }
 }
 #ghd-msg .countme .btn-primary {

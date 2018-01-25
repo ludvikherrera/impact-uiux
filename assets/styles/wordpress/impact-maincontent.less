@@ -23,27 +23,28 @@
     }
 }
 
-// Main Hero Image 
+// Main Hero Image
 
 #ghd-msg {
     background: @red0;
-    
+
     .row {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    
+
     .ghd-message {
         padding-left: calc( 115px * 1.25vw );
         margin-top: .25em;
         background: url('../images/icons/globe.svg') 2em bottom no-repeat;
-        
-        @media(max-width: 660px) {
+
+        @media(max-width: 670px) {
             background: none;
-            padding-left: calc( 45px * 1.25vw );
+            // padding-left: calc( 45px * 1.25vw );
+            padding-left: 0;
         }
     }
-    
+
     .ghd-message p {
     font-family: 'Georgia','Times',serif;
     font-size: 2.75em;
@@ -52,12 +53,15 @@
     font-style: italic;
     line-height: 1em;
     height: 2.75em;
-        
-    @media(max-width: 780px) {
-        font-size: calc ( 2.75vw );
+
+    @media(max-width: 670px) {
+        font-size: calc( 6vw );
+        margin-top: 2em;
+        text-align: center;
+        // font-size: 1.5em;
         }
     }
-    
+
     .countme .btn-primary {
         background: @white;
         color: @red0;
@@ -65,7 +69,7 @@
         padding: 0.85em 1em;
         font-size: 1.5em;
         box-shadow: 0px 5px 5px rgba(102,102,102,0.2);
-        
+
         .btn-donate {
             display: block;
             font-size: .75em;
@@ -336,6 +340,3 @@ img.alignright {
         text-transform: none;
     }
 }
-
-
-
