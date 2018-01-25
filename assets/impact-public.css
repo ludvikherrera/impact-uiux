@@ -6474,7 +6474,7 @@ button.close {
     -webkit-transform: scale(1);
   }
 }
-/* Original Palette 
+/* Original Palette
 
 @red0: #920e16; // Impact Red
 @red1: #f5736e; // Sunrise Red
@@ -6659,6 +6659,7 @@ form :-ms-input-placeholder {
 .alert-bar p {
   color: white;
   margin: 0;
+  font-size: 12px;
 }
 .alert-bar .code.business {
   text-transform: uppercase;
