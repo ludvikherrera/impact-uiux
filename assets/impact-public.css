@@ -6650,16 +6650,20 @@ form :-ms-input-placeholder {
 }
 @media (max-width: 768px) {
   .alert-bar {
-    font-size: .80em;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 .alert-bar a,
 .alert-bar p {
   color: white;
   margin: 0;
-  font-size: 12px;
+}
+@media (max-width: 768px) {
+  .alert-bar a,
+  .alert-bar p {
+    font-size: 12px;
+  }
 }
 .alert-bar .code.business {
   text-transform: uppercase;
@@ -12217,7 +12221,8 @@ nav.navbar.navbar-default .navbar-header a.navbar-brand img {
 }
 @media (max-width: 530px) {
   nav.navbar.navbar-default .navbar-header a.navbar-brand img {
-    height: 38px;
+    height: 35px;
+    margin-left: 0;
   }
 }
 nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd {
