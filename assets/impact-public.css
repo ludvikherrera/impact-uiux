@@ -10400,10 +10400,9 @@ footer .utility-footer a {
 }
 footer .utility-footer ul {
   list-style: none;
-  /* border: 1px dashed yellow; */
   display: flex;
   justify-content: flex-start;
-  width: 1170px;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
@@ -11312,10 +11311,10 @@ hr.divider.lt-blue {
   margin-top: .25em;
   background: url('../images/icons/globe.svg') 2em bottom no-repeat;
 }
-@media (max-width: 660px) {
+@media (max-width: 670px) {
   #ghd-msg .ghd-message {
     background: none;
-    padding-left: calc(56.25px);
+    padding-left: 0;
   }
 }
 #ghd-msg .ghd-message p {
@@ -11327,9 +11326,11 @@ hr.divider.lt-blue {
   line-height: 1em;
   height: 2.75em;
 }
-@media (max-width: 780px) {
+@media (max-width: 670px) {
   #ghd-msg .ghd-message p {
-    font-size: calc 2.75vw;
+    font-size: calc(6vw);
+    margin-top: 2em;
+    text-align: center;
   }
 }
 #ghd-msg .countme .btn-primary {
@@ -12561,6 +12562,7 @@ nav.navbar.navbar-default .navbar-collapse.in#bs-navbar-collapse-1 ul.nav.navbar
   margin-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
 }
 nav.navbar.navbar-default .navbar-collapse.in#bs-navbar-collapse-1 ul.nav.navbar-nav li a {
   font-weight: 400;
