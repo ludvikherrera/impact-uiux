@@ -12215,22 +12215,15 @@ nav.navbar.navbar-default .navbar-header {
   margin-right: 0px;
 }
 nav.navbar.navbar-default .navbar-header a.navbar-brand img {
-  height: 45px;
-  margin: 26px 0px 0px 15px;
-  /* CHANGE ^ ---------------------------------------------------------------------------- */
-}
-@media (max-width: 530px) {
-  nav.navbar.navbar-default .navbar-header a.navbar-brand img {
-    height: 35px;
-    margin-left: 0;
-  }
+  height: 55px;
+  margin: 17px 0px 0px 15px;
 }
 nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd {
   margin-left: 30px;
 }
 nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd img {
-  height: 65px;
-  margin: 15px 0px 0px 15px;
+  height: 45px;
+  margin: 26px 0px 0px 15px;
 }
 @media (max-width: 1150px) {
   nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd img {
@@ -12245,7 +12238,9 @@ nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd img {
 }
 @media (max-width: 530px) {
   nav.navbar.navbar-default .navbar-header a.navbar-brand.ghd img {
-    height: 38px;
+    height: 32px;
+    margin-left: 0;
+    margin-top: 28px;
   }
 }
 @media (max-width: 1150px) {
