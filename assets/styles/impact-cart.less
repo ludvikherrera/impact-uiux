@@ -424,6 +424,20 @@ p.info {
   }
 }
 
+.match_remaining {
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 30px;
+  p {
+    font-weight: bold;
+    margin: 0;
+    color: @gray0;
+  }
+  :first-of-type {
+    color: @green;
+  }
+}
+
 .total-text {
   float: right;
   margin: 15px 30px 0px 30px;
@@ -433,6 +447,7 @@ p.info {
   h2 {
     color: @blue0;
     display: inline-block;
+    font-weight: bold;
   }
   small {
     display: block;
