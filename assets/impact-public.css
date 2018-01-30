@@ -7397,6 +7397,19 @@ p.info {
   margin-bottom: 0px;
   font-size: 14px;
 }
+.match_remaining {
+  text-align: right;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.match_remaining p {
+  font-weight: bold;
+  margin: 0;
+  color: #414141;
+}
+.match_remaining :first-of-type {
+  color: #1FCB61;
+}
 .total-text {
   float: right;
   margin: 15px 30px 0px 30px;
@@ -7407,6 +7420,7 @@ p.info {
 .total-text h2 {
   color: #e11b29;
   display: inline-block;
+  font-weight: bold;
 }
 .total-text small {
   display: block;
@@ -10808,21 +10822,15 @@ hr.divider.lt-blue {
   color: #E82C2A;
 }
 .match-bar {
-  background: #aaaaaa;
+  background: #FFDF00;
   margin: 0 30px 15px 0px;
   display: flex;
   align-items: center;
-  padding: 5px 0 5px 15px;
+  padding: 0px 0px 0px 15px;
 }
-.match-bar label {
-  margin-bottom: 0;
-  color: #ffffff;
-}
-.match-bar label input {
-  margin-right: 10px;
-}
-.match-bar label span {
-  margin-left: 5px;
+.match-bar p {
+  font-weight: bold;
+  padding: 15px 0 0 5px;
 }
 .cart_nu {
   height: auto;

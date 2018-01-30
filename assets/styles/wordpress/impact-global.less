@@ -29,6 +29,9 @@
 
 @yellow: #FFDF00; // Yellow for alerts
 
+@green: #1FCB61; // Green for match met
+@orange: #FD7F23; // Orange for match partial
+
 
 .lato {
 	&.light {
@@ -362,21 +365,25 @@ hr.divider {
 
 //Distribution of matching bar in cart
 .match-bar {
-  background: @gray1;
+  background: @yellow;
 	margin: 0 30px 15px 0px;
 	display: flex;
 	align-items: center;
-	padding: 5px 0 5px 15px;
-	label {
-		margin-bottom: 0;
-		color: @white0;
-		input {
-			margin-right: 10px;
-		}
-		span {
-			margin-left: 5px;
-		}
+	padding: 0px 0px 0px 15px;
+	p {
+		font-weight: bold;
+		padding: 15px 0 0 5px;
 	}
+	// label {
+	// 	margin-bottom: 0;
+	// 	color: @white0;
+	// 	input {
+	// 		margin-right: 10px;
+	// 	}
+	// 	span {
+	// 		margin-left: 5px;
+	// 	}
+	// }
 }
 
 // Hand and heart cart
