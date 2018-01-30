@@ -215,6 +215,7 @@ form {
     background: @calert-code;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -226,10 +227,20 @@ form {
     a, p {
     color: white;
     margin: 0;
+    line-height: 1.5em;
     @media(max-width: 768px) {
     font-size: 12px;
   }
     // font-size: 12px;
+    }
+    span.spacer {
+      padding: 0 10px;
+      @media(max-width: 698px) {
+        visibility: hidden;
+      }
+      @media(max-width: 600px) {
+        display:none;
+      }
     }
 
     // When businesses want to enter their code through a modal
