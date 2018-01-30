@@ -6645,6 +6645,7 @@ form :-ms-input-placeholder {
   background: #5BC6CC;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -6658,11 +6659,25 @@ form :-ms-input-placeholder {
 .alert-bar p {
   color: white;
   margin: 0;
+  line-height: 1.5em;
 }
 @media (max-width: 768px) {
   .alert-bar a,
   .alert-bar p {
     font-size: 12px;
+  }
+}
+.alert-bar span.spacer {
+  padding: 0 10px;
+}
+@media (max-width: 698px) {
+  .alert-bar span.spacer {
+    visibility: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .alert-bar span.spacer {
+    display: none;
   }
 }
 .alert-bar .code.business {
